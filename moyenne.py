@@ -10,7 +10,7 @@ def moyenne(valeurs):
     s = 0
     if len(valeurs) == 0:
         return 0
-    else : 
+    else: 
         for i in valeurs:
             s += i
         return s/len(valeurs)
