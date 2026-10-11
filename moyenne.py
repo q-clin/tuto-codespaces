@@ -7,13 +7,9 @@ from rich.console import Console
 
 
 def moyenne(valeurs):
-    s = 0
-    if len(valeurs) == 0:
-        return 0
-    else: 
-        for i in valeurs:
-            s += i
-        return s/len(valeurs)
+    if len(valeurs) ==0:
+        raise ValueError("La liste ne peut pas être vide.")
+    return sum(valeurs) / len(valeurs)
 
 if __name__ == "__main__":
     Console().print(Markdown(moyenne.__doc__))
